@@ -21,6 +21,9 @@ module.exports = {
       qty: {
         type: Sequelize.DOUBLE
       },
+      price: {
+        type: Sequelize.DOUBLE
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
@@ -35,4 +38,3 @@ module.exports = {
     await queryInterface.dropTable('detail_transaksi');
   }
 };
-
